@@ -1,11 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-</head>
-<body>
-    Welocome to kalpana's website
-</body>
-</html>
+{% extends "base.html" %} {% block title %}Home {% endblock title %} 
+{% block body %}
+  <div class="container-fluid my-4 px-0">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://img.freepik.com/free-photo/delicious-ice-cream-with-topping_23-2150735500.jpg?uid=R73866433&ga=GA1.1.1020763213.1729701491&semt=ais_hybrid&w=740"
+            class="d-block w-100"
+            alt="..."
+            height="550px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img.freepik.com/free-photo/bundle-flower-buds-cupcake-wooden-platter-blue-background-high-quality-photo_114579-36610.jpg?uid=R73866433&ga=GA1.1.1020763213.1729701491&semt=ais_hybrid&w=740"
+            class="d-block w-100"
+            alt="..."
+            height="550px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img.freepik.com/free-photo/top-close-view-ice-creams-xmas-tree-cupcake-xmas-ornaments-grey-background_140725-130394.jpg?uid=R73866433&ga=GA1.1.1020763213.1729701491&semt=ais_hybrid&w=740"
+            class="d-block w-100"
+            alt="..."
+            height="550px"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <h2 style="text-align: center">Select from our range of Ice Creame</h2>
+
+  <div class="container my-4 px-3" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+    <div class="card" style="width: 25rem;">
+  <img src="https://img.freepik.com/free-photo/ice-cream-table_140725-8604.jpg?uid=R73866433&ga=GA1.1.1020763213.1729701491&semt=ais_hybrid&w=740" class="card-img-top" alt="..." height="250px">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 25rem;">
+  <img src="https://img.freepik.com/free-photo/ice-crem-balls-decorated-with-mint-glass-vase-wooden-table_141793-2910.jpg?uid=R73866433&ga=GA1.1.1020763213.1729701491&semt=ais_hybrid&w=740" class="card-img-top" alt="..." height="250px">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 25rem;">
+  <img src="https://img.freepik.com/free-photo/close-up-refreshing-ice-cream-table_23-2148513935.jpg?uid=R73866433&ga=GA1.1.1020763213.1729701491&semt=ais_hybrid&w=740" class="card-img-top" alt="..." height="250px">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="card" style="width: 25rem;">
+  <img src="https://img.freepik.com/free-photo/roasted-plums-ice-cream-with-chopped-hazelnut_53876-103571.jpg?uid=R73866433&ga=GA1.1.1020763213.1729701491&semt=ais_hybrid&w=740" class="card-img-top" alt="..." height="250px">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+<div class="card" style="width: 25rem;">
+  <img src="https://img.freepik.com/free-photo/delicious-ice-cream-assortment_23-2150096678.jpg?uid=R73866433&ga=GA1.1.1020763213.1729701491&semt=ais_hybrid&w=740" class="card-img-top" alt="..." height="250px">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+  </div>
+{% endblock body %}

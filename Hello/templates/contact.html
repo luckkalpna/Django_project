@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Contact
+{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+  <img src="https://img.freepik.com/free-photo/businesswoman-taking-notes-clipboard-sitting-desk-corporate-office-while-taking_482257-4201.jpg?uid=R73866433&ga=GA1.1.1020763213.1729701491&semt=ais_hybrid&w=740" alt="..." height='550px' width="100%">
+</div>
+<div class="container mb-4">
+  <h1 style="text-align: center; margin-top: 20px;">Contact Us</h1>
+  <div class="mb-3">
+  <label for="name" class="form-label">Name</label>
+  <input type="text" class="form-control" id="name" name='name' placeholder="Enter Your Name">
+
+  <label for="email" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
+
+  <label for="phone" class="form-label">Phone</label>
+  <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter Your Email">
+</div>
+
+<div class="mb-3">
+  <label for="desc" class="form-label">Explain Your Query......</label>
+  <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+</div>
+<button type='submit' class="btn btn-primary">Submit</button>
+</div>
+{% endblock body %}
