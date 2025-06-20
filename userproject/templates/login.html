@@ -87,8 +87,8 @@
   <body>
     <div class="container my-4">
       <main class="form-signin w-100 m-auto">
-        {% csrf_token %}
         <form method="post" action="/login">
+          {% csrf_token %}
           <img
             class="mb-4"
             src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
